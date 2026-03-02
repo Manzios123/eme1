@@ -108,44 +108,6 @@
 </head>
 <body class="bg-warmBeige text-gray-800 antialiased">
 
-  <!-- NAVBAR -->
-  <header id="site-header" class="fixed w-full z-50 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <nav class="flex items-center justify-between py-4">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-3 group">
-          <div class="w-10 h-10  rounded-full flex items-center justify-center transition-transform group-hover:scale-110">
-            <img src="assets/images/rs-logo1.png" alt="rs-logo">
-          </div>
-          <div>
-            <span class="font-heading font-bold text-xl text-earthGreen">Roots & Shoots</span>
-            <span class="block text-xs text-earthBrown -mt-1">Rwanda</span>
-          </div>
-        </a>
-
-        <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center space-x-8">
-          <a href="index.html" class="text-gray-700 hover:text-earthGreen font-medium transition-colors" data-i18n="nav.home">Home</a>
-          <a href="about.html" class="text-gray-700 hover:text-earthGreen font-medium transition-colors" data-i18n="nav.about">About</a>
-          <a href="projects.html" class="text-gray-700 hover:text-earthGreen font-medium transition-colors" data-i18n="nav.projects">Projects</a>
-          <a href="donate.html" class="text-earthGreen font-semibold border-b-2 border-earthGreen pb-1">Donate</a>
-          
-          <!-- Language Selector -->
-          <div class="flex items-center space-x-2 ml-4">
-            <button onclick="changeLang('en')" class="px-3 py-1 rounded-lg text-sm hover:bg-gray-100 transition-colors font-medium" aria-label="English">EN</button>
-            <button onclick="changeLang('fr')" class="px-3 py-1 rounded-lg text-sm hover:bg-gray-100 transition-colors font-medium" aria-label="Français">FR</button>
-            <button onclick="changeLang('rw')" class="px-3 py-1 rounded-lg text-sm hover:bg-gray-100 transition-colors font-medium" aria-label="Kinyarwanda">RW</button>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
-          <i data-lucide="menu" class="w-6 h-6 text-earthGreen"></i>
-        </button>
-      </nav>
-    </div>
-  </header>
-
   <!-- HERO SECTION -->
   <section id="hero" class="min-h-screen relative pt-20 flex items-center justify-center overflow-hidden">
     <!-- Background with nature pattern -->
@@ -278,19 +240,19 @@
       <div class="mt-20 bg-white rounded-2xl p-8 shadow-lg" data-aos="zoom-in">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div class="text-center">
-            <div class="text-4xl font-bold text-earthGreen mb-2">50,000+</div>
+            <div class="text-4xl font-bold text-earthGreen mb-2">5,000+</div>
             <div class="text-gray-600" data-i18n="donate.stats.trees">Trees Planted</div>
           </div>
           <div class="text-center">
-            <div class="text-4xl font-bold text-earthGreen mb-2">2,000+</div>
+            <div class="text-4xl font-bold text-earthGreen mb-2">500+</div>
             <div class="text-gray-600" data-i18n="donate.stats.youth">Youth Empowered</div>
           </div>
           <div class="text-center">
-            <div class="text-4xl font-bold text-earthGreen mb-2">100+</div>
+            <div class="text-4xl font-bold text-earthGreen mb-2">6+</div>
             <div class="text-gray-600" data-i18n="donate.stats.projects">Projects Completed</div>
           </div>
           <div class="text-center">
-            <div class="text-4xl font-bold text-earthGreen mb-2">15</div>
+            <div class="text-4xl font-bold text-earthGreen mb-2">7+</div>
             <div class="text-gray-600" data-i18n="donate.stats.districts">Districts Reached</div>
           </div>
         </div>
@@ -488,7 +450,7 @@
              data-i18n="donate.cta.button">
             Donate Now
           </a>
-          <a href="mailto:finance@rootsandshoots.rw" 
+          <a href="mailto:inf@rootsandshootsrwanda.org" 
              class="glass-effect hover:bg-white/20 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300"
              data-i18n="donate.cta.contact">
             Contact Finance Team
@@ -497,79 +459,6 @@
       </div>
     </div>
   </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <div class="flex items-center space-x-3 mb-4">
-            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-              <i data-lucide="leaf" class="w-6 h-6 text-earthGreen"></i>
-            </div>
-            <div>
-              <div class="font-heading font-bold text-xl">Roots & Shoots</div>
-              <div class="text-sm text-gray-400">Rwanda</div>
-            </div>
-          </div>
-          <p class="text-gray-400 text-sm" data-i18n="footer.mission">
-            Empowering youth to make a difference for people, animals, and the environment.
-          </p>
-        </div>
-        
-        <div>
-          <h4 class="font-heading font-bold text-lg mb-4" data-i18n="footer.contact">Contact</h4>
-          <ul class="space-y-2 text-gray-400 text-sm">
-            <li class="flex items-center space-x-2">
-              <i data-lucide="map-pin" class="w-4 h-4"></i>
-              <span>Remera, Kigali, Rwanda</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <i data-lucide="phone" class="w-4 h-4"></i>
-              <span>+250 788 451 473</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <i data-lucide="mail" class="w-4 h-4"></i>
-              <span>info@rootsandshoots.rw</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="font-heading font-bold text-lg mb-4" data-i18n="footer.quick">Quick Links</h4>
-          <ul class="space-y-2">
-            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.home">Home</a></li>
-            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.about">About</a></li>
-            <li><a href="projects.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.projects">Projects</a></li>
-            <li><a href="donate.html" class="text-gray-400 hover:text-white transition-colors" data-i18n="nav.donate">Donate</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="font-heading font-bold text-lg mb-4" data-i18n="footer.social">Follow Us</h4>
-          <div class="flex space-x-4">
-            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-earthGreen rounded-full flex items-center justify-center transition-colors">
-              <i data-lucide="facebook" class="w-5 h-5"></i>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-earthGreen rounded-full flex items-center justify-center transition-colors">
-              <i data-lucide="twitter" class="w-5 h-5"></i>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-earthGreen rounded-full flex items-center justify-center transition-colors">
-              <i data-lucide="instagram" class="w-5 h-5"></i>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-earthGreen rounded-full flex items-center justify-center transition-colors">
-              <i data-lucide="linkedin" class="w-5 h-5"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-        <p>&copy; <span id="current-year"></span> Roots & Shoots Rwanda. <span data-i18n="footer.rights">All rights reserved.</span></p>
-        <p class="mt-2" data-i18n="footer.registered">Registered NGO in Rwanda</p>
-      </div>
-    </div>
-  </footer>
 
   <!-- FLOATING TREE BUTTON -->
   <a href="https://ecoforest.green/impacts/roots-and-shoots" 
